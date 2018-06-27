@@ -1,0 +1,16 @@
+<view class="geek-noticebar {{hasRightIcon?'geek-noticebar--within-icon':''}}" style="color: {{color}};background-color: {{backgroundColor}}" wx:if="{{show}}">
+    <view class="geek-noticebar__left-icon" wx:if="{{leftIcon}}">
+        <image src="{{leftIcon}}"></image>
+    </view>
+    <view class="geek-noticebar__content-wrap">
+        <view animation="{{animationData}}" class="geek-noticebar__content">
+      {{text}}
+    </view>
+    </view>
+    <block wx:if="{{mode}}">
+        <image bindtap="_handleButtonClick" class="geek-noticebar__right-icon" type="close" wx:if="{{mode==='closeable'}}"></image>
+        <navigator openType="{{openType}}" url="{{url}}" wx:if="{{mode==='link'}}">
+            <image class="geek-noticebar__right-icon" type="arrow"></image>
+        </navigator>
+    </block>
+</view>

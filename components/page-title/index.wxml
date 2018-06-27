@@ -1,0 +1,3 @@
+<view class="page-title">
+    <text class="page-title-text">{{pageTitle}}</text>
+</view>

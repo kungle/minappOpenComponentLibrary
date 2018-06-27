@@ -1,0 +1,8 @@
+<view class="style-container">
+    <button bindtap="handleTapOne" class="btn-share">样式一</button>
+    <button bindtap="handleTapTwo" class="btn-share top-margin orange">样式二</button>
+    <button bindtap="handleTapThree" class="btn-share top-margin red">样式三</button>
+    <share-one avatar="{{shareOne.avatar}}" nickname="{{shareOne.nickname}}" showShareModel="{{shareOne.showShareModel}}"></share-one>
+    <share-two adImageUrl="{{shareTwo.adImageUrl}}" adName="{{shareTwo.adName}}" adTime="{{shareTwo.adTime}}" avatar="{{shareTwo.avatar}}" incomeMoney="{{shareTwo.incomeMoney}}" joinAvatarList="{{shareTwo.joinAvatarList}}" joinNumber="{{shareTwo.joinNumber}}" nickname="{{shareTwo.nickname}}" showShareModel="{{shareTwo.showShareModel}}"></share-two>
+    <share-three avatar="{{shareThree.avatar}}" awardMoney="{{shareThree.awardMoney}}" nickname="{{shareThree.nickname}}" showShareModel="{{shareThree.showShareModel}}"></share-three>
+</view>

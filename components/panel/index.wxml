@@ -1,0 +1,6 @@
+<view>
+    <view class="geek-panel-wrapper">
+        <text class="geek-panel-text">{{panelStr}}</text>
+        <slot></slot>
+    </view>
+</view>

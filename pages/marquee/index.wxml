@@ -1,0 +1,2 @@
+<page-title pageTitle="文字横向跑马灯"></page-title>
+<marquee backgroundColor="{{bar.backgroundColor}}" color="{{bar.textColor}}" scrollable="{{bar.scrollable}}" text="{{bar.text}}"></marquee>

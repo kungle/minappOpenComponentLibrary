@@ -1,0 +1,8 @@
+<view class="container-geek">
+    <view class="geek-top-line"></view>
+    <image class="geek-top-logo" src="../../image/geek.png"></image>
+    <view wx:for="{{groupList}}" wx:for-item="group" wx:key="share">
+        <page-title pageTitle="{{group.pageTitle}}"></page-title>
+        <cell bind:navigate="navigateListener" cellList="{{group.cellList}}"></cell>
+    </view>
+</view>
